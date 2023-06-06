@@ -1,13 +1,21 @@
+@font-face {
+    font-family: myMainFont;
+    src: url(../Raleway-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
 }
+
 body{
+    font-family: myMainFont;
     background: #080808;
     color: #fff;
+    line-height: 1.7;
 }
+
 .header{
     width: 100%;
     /* background: url(../IMG_20220313_174527_207.jpg) no-repeat; */
@@ -17,11 +25,31 @@ body{
 .container{
     padding: 10px 10%;
 }
+.typewriter{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 10s linear infinite;
+}
+
+  @keyframes typing {
+    from {
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+    
+  }
+
+
+
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* background-color: rgb(16, 123, 123); */
 }
 .logo{
     width: 140px;
